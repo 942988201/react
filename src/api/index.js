@@ -1,16 +1,8 @@
 import axios from 'axios'
 
+const HttpRequest = axios.create({
 
-
-class HttpRequest {
-    constructor(baseUrl = baseURL) {
-        this.baseUrl = "http://localhost:3004/";
-        this.queue = {}
-    }
-
-
-
-
-}
+    baseURL: 'http://localhost:3004/',
+})
 
 export default HttpRequest
